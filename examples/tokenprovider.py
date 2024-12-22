@@ -1,7 +1,7 @@
 import configparser
 
 
-class DevTokens:
+class TokenProvider:
     def __init__(self):
         tokens_config = configparser.ConfigParser()
         tokens_config.read('conf/tokens.ini')
@@ -14,5 +14,5 @@ class DevTokens:
 
 
 # if __name__ == '__main__':
-#     devtokens = DevTokens()
+#     devtokens = TokenProvider()
 #     print(devtokens.get_token('willdevbot'))
